@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tictactoe</string>
+    <string name="rules_and_regulations">Rules and Regulations</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="shahid_ali_cheema">Shahid Ali Cheema</string>
+    <string name="wins">wins</string>
+    <string name="shahid_ali">Shahid Ali</string>
+    <string name="draw">Draw</string>
+    <string name="_0">0</string>
+</resources>

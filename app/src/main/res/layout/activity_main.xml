@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0000"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ticlogo"
+        android:text="@string/tic_tac_toe"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shahid_ali_cheema"
+        android:id="@+id/player1name"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ticlogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wins"
+        android:id="@+id/player1wins"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/player1name"
+        android:layout_below="@+id/ticlogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/shahid_ali"
+        android:id="@+id/player2name"
+        android:textSize="20sp"
+        android:layout_below="@+id/player1name"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/player2wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1wins"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/player2name"
+        android:text="@string/wins"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/draw"
+        android:id="@+id/Drawname"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/player2name"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/_0"
+        android:id="@+id/drawcount"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/player2name"
+        android:layout_below="@+id/player2wins"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="100dp"
+            android:onClick="checks"
+
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:onClick="checks"
+
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="checks"
+
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/btn4"
+            android:onClick="checks"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <Button
+            android:id="@+id/btn5"
+            android:onClick="checks"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/btn6"
+            android:onClick="checks"
+            android:layout_width="100dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="100dp"
+
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/btn7"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="checks"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <Button
+            android:id="@+id/btn8"
+            android:onClick="checks"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/btn9"
+            android:onClick="checks"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+
+            android:layout_height="100dp"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"/>
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>
